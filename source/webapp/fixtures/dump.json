@@ -1,0 +1,202 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$HEUbQk5JBcIi422AaOoT0l$32qk2I9SAy9aPT7Z54ZKpWWgjPrH2lWTb/D54719yII=",
+    "last_login": "2023-03-14T08:14:44.960Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-28T05:51:26.065Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 1,
+  "fields": {
+    "name": "Le Chemin Du Roi Brut",
+    "description": "Our Brut is made with grapes from only the finest vineyards in Champagne, France that have matured to peak ripeness. After pressing, the wine is aged over 4 years on the lees to create a balance of bright and crisp acidity with notes of ripe stone fruits",
+    "image": "https://images.vivino.com/thumbs/IZxKTSWzQq2PJ48W3ZTIEg_pb_600x600.png",
+    "category": "Alcohol",
+    "remaining": 12,
+    "price": "200.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 2,
+  "fields": {
+    "name": "Bmw X7",
+    "description": "One of the most popular model of Bmw",
+    "image": "https://s.auto.drom.ru/i24226/c/photos/fullsize/bmw/x7/bmw_x7_851576.jpg",
+    "category": "Cars",
+    "remaining": 2,
+    "price": "85000.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 3,
+  "fields": {
+    "name": "Iphone 14 pro Max",
+    "description": "The always-on display and Dynamic Island are two of the main upgraded features on the iPhone 14 Pro and Pro Max. There are plenty of tricks, such as deleting duplicate photos or setting up a widget to identify songs with a couple taps, that will work on any iPhone 14 model",
+    "image": "https://asset.kompas.com/crops/9fjF5pzqYgZzsOZopAbRlqsEamM=/0x0:3464x2309/750x500/data/photo/2022/09/09/631ae3f796604.jpg",
+    "category": "Smartphone",
+    "remaining": 5,
+    "price": "1099.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 4,
+  "fields": {
+    "name": "Grey Goose le citron",
+    "description": "Taste: Clean, fresh and zippy. Zesty lemon with a slight bitter note, as one might expect from fresh lemons",
+    "image": "http://cdn.shopify.com/s/files/1/0591/1694/5614/products/FREEGIFTTEMPLATE-Botella-fortheresizing_2_00d6a50f-2826-49ce-98c6-0eff2894df84.png?v=1656667798",
+    "category": "Alcohol",
+    "remaining": 14,
+    "price": "55.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 5,
+  "fields": {
+    "name": "55\" Crystal UHD 4K AU7100",
+    "description": "Everything you watch upscaled to striking 4K Ultra HD detail.\r\nNear bezel-less screen so all you enjoy is the gorgeous picture.\r\nSyncs your TV and soundbar speakers in perfect harmony.\r\nSmart TV apps: Netflix, Prime Video, Disney+, BT Sport and more…",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/feature/148998032/uk-feature-uhd-au7000-489368586?$FB_TYPE_A_MO_JPG$",
+    "category": "Other",
+    "remaining": 5,
+    "price": "785.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 6,
+  "fields": {
+    "name": "Audi A6 Sedan TFSI e",
+    "description": "Audi is expanding its portfolio of electrified models consistently: Five powerful models with plug-in hybrid drive are making their debut in the second half of 2019 alone. Presales of the A6 55 TFSI e quattro (combined fuel consumption in l/100 km*: 2.1–1.9; combined energy consumption in kWh/100 km*: 17.9–17.4; combined CO2 emissions in g/km*: 47–43 are starting in Germany. With its system output of 270 kW (367 PS), it delivers a confident performance.",
+    "image": "https://audimediacenter-a.akamaihd.net/system/production/media/86301/images/af0b0b8565ad129a521cf145c2c46dc08b116d3a/A1914174_blog.jpg?1582576581",
+    "category": "Cars",
+    "remaining": 5,
+    "price": "62000.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 8,
+  "fields": {
+    "name": "Miller",
+    "description": "May be best beer in the world",
+    "image": "https://winestyle.ru/images_raw/pages/1561201868_miller1590130269.jpg",
+    "category": "Alcohol",
+    "remaining": 100,
+    "price": "2.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 9,
+  "fields": {
+    "name": "Guiness",
+    "description": "Super beer",
+    "image": "https://www.colonialspirits.com/wp-content/uploads/2016/01/Guinness-Draught-Stout-6-Bottles.jpg",
+    "category": "Alcohol",
+    "remaining": 50,
+    "price": "3.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 10,
+  "fields": {
+    "name": "Juventus home jersey",
+    "description": "Juventus home jersey season 2022-2023",
+    "image": "https://store.juventus.com/data/store/product/5/54817/product.jpg",
+    "category": "Other",
+    "remaining": 10,
+    "price": "85.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 11,
+  "fields": {
+    "name": "samsung galaxy s23 ultra",
+    "description": "Super duper phone",
+    "image": "https://4pda.to/s/mcwkDez1330YCWRO5N7EWiTCJRa55.jpg",
+    "category": "Smartphone",
+    "remaining": 15,
+    "price": "1900.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 12,
+  "fields": {
+    "name": "APPLE MacBook Pro 16 2021",
+    "description": "APPLE MacBook Pro 16 2021 16.2 120Hz Silver (MK1E3) Apple M1 Pro 10-Core/16/512/M1 Pro 16-Core/MacOS",
+    "image": "https://www.mechta.kz/images/product/13386/17000001101_1-480.webp",
+    "category": "Other",
+    "remaining": 7,
+    "price": "2500.00",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.order",
+  "pk": 17,
+  "fields": {
+    "username": "Yerbol",
+    "phone_number": "7-777-77-77",
+    "address": "Seifullina 500",
+    "created_at": "2023-03-14T08:32:17.581Z"
+  }
+},
+{
+  "model": "webapp.orderproducts",
+  "pk": 22,
+  "fields": {
+    "product": 1,
+    "order": 17,
+    "amount": 1
+  }
+},
+{
+  "model": "webapp.orderproducts",
+  "pk": 23,
+  "fields": {
+    "product": 4,
+    "order": 17,
+    "amount": 1
+  }
+}
+]
