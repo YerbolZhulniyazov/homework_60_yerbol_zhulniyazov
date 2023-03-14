@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Product Info{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row d-flex justify-content-center card-margin">
+            <div class="col-8 card">
+                <div class="row card-padding">
+                    <div class="col-6">
+                        <img src="{{ product.image }}" class="img-fluid" alt="{{ product.name }}">
+                    </div>
+                    <div class="col-6">
+                        <h2>{{ product.name }}</h2>
+                        <p>
+                            {{ product.category }}
+                        </p>
+                        <p>
+                            <b>Price: {{ product.price }}$</b>
+                        </p>
+                        <p>{{ product.description }}</p>
+                        <p>Remaining: {{ product.remaining }} items</p>
+                        <div class="row margin-buttons">
+                            <div class="col-3">
+                                <a class="btn btn-primary edit-button" href="{% url 'product_update' product.pk %}"
+                                   role="button">Edit</a>
+                            </div>
+                            <div class="col-3">
+                                <a class="btn btn-danger" href="{% url 'product_delete' product.pk %}"
+                                   role="button">Delete</a>
+                            </div>
+                            <form action="{% url 'add_to_cart' product.pk %}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" class='btn btn-success margin-buttons'>Добавить в корзину</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Products{% endblock %}
+{% block menu %}
+
+{% endblock %}
+{% block content %}
+    <div class="container">
+    <h1>Products</h1>
+    <br>
+    {% include 'partial/search.html' %}
+        <div class="row">
+            {% for product in products %}
+                {% if product.remaining >= 1 %}
+                    <div class="card mb-3 card-margin" style="max-width: 450px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ product.image }}" class="img-fluid rounded-start" alt="{{ product.name }}">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <p class="card-text">{{ product.category }}</p>
+                                <h5>Price: {{ product.price }}$</h5>
+                                <a href="{% url 'detail_product' product.pk %}">Подробнее</a>
+                                <form action="{% url 'add_to_cart' product.pk %}" method="post">
+                                {% csrf_token %}
+                                <button type="submit" class='btn btn-success margin-buttons'>Добавить в корзину</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
+    </div>
+{% endblock %}
+
